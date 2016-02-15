@@ -1,3 +1,3 @@
 language: java
-mvn test
-mvn install -DskipTests=true
+sudo: false
+script: mvn clean verify
