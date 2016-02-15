@@ -14,7 +14,7 @@ public class Time {
         try {
             LogManager.getLogManager().readConfiguration(Time.class.getResourceAsStream("/logger.properties"));
         } catch (IOException e){
-            logger.log(Level.SEVERE, "Не удалось создать файл лога", e);
+            logger.log(Level.SEVERE, "Failed to create the log file", e);
         }
 
 
@@ -61,7 +61,7 @@ public class Time {
         nightMAX.set(Calendar.HOUR_OF_DAY, 6);
         nightMAX.set(Calendar.MINUTE, 0);
         nightMAX.set(Calendar.MILLISECOND, 0);
-        logger.info("Установили временные интервалы");
+        logger.info("Setting time intervals");
 
 
 
@@ -69,13 +69,13 @@ public class Time {
 
 
         ResourceBundle resourceBundle = ResourceBundle.getBundle("resources", localeDefault.getDefault());
-        logger.info("Опредиления языка пользователя");
+        logger.info("The definitions of the user's language");
 
-        logger.info("Вывод сообщения");
+        logger.info("Showing a message");
         String st = showMessage(morningMIN, morningMAX, dayMIN, dayMAX, eveningMIN, eveningMAX, nightMIN, nightMAX, currentTime);
         String string = resourceBundle.getString(st);
         System.out.println(string);
-        logger.info("Сообщение выведено");
+        logger.info("Message displayed");
 
 
 
