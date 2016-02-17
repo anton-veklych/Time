@@ -1,6 +1,6 @@
-фев 15, 2016 12:08:37 PM Time main
-INFO: Установили временные интервалы
-фев 15, 2016 12:08:37 PM Time main
-INFO: Опредиления языка пользователя
-фев 15, 2016 12:08:37 PM Time main
-INFO: Вывод сообщения
+фев 17, 2016 1:39:06 PM Time main
+INFO: The definitions of the user's language
+фев 17, 2016 1:39:06 PM Time main
+INFO: Showing a message
+фев 17, 2016 1:39:06 PM Time main
+INFO: Message displayed
